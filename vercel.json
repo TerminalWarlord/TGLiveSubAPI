@@ -1,15 +1,11 @@
 {
+    "name": "Subs API",
     "version": 2,
-    "builds": [
-        {
-            "src": "./index.py",
-            "use": "@vercel/python"
-        }
-    ],
+    "builds": [{
+        "src": "*py",
+        "use": "@liudonghua123/now-flask"
+    }],
     "routes": [
-        {
-            "src": "(.*)",
-            "dest": "app.py"
-        }
+        { "src": "(.*)", "dest": "app.py" }
     ]
 }
